@@ -1,0 +1,238 @@
+/*---------------------------
+    COLOR PALETTE:
+
+    red: #D20417
+    yellow: #FFBD59
+    off-white: #FFF8E4
+
+---------------------------*/
+
+/*-------------
+    RESET
+-------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------
+    GENERAL
+-------------*/
+html {
+    font-family: 'Alegreya', serif;
+    background-image: url('images/background.png');
+    color: #27231a;
+}
+
+body {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*-------------
+    HEADER
+-------------*/
+header {
+    padding: 20px;
+    margin: 30px;
+}
+
+.logo {
+    display: inline-block;
+    width: 100px;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 40px;
+    margin: 1px 0px;
+}
+
+header p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+header p span {
+    display: inline-block;
+    color: #b17300;
+    font-weight: 800;;
+}
+
+/*-------------
+    CONTAINER
+-------------*/
+.genres-container {
+    padding: 20px;
+    margin: 30px;
+}
+
+.genres-container h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.genres-container h2 div {
+    display: inline-block;
+    color: #c20f0f;
+    font-weight: 800;
+}
+
+/*-------------
+    GENRES
+-------------*/
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.genre {
+    background-color: transparent;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #27231a;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    box-shadow: 1px 3px 3px #27231a;
+    cursor: pointer;
+}
+
+.genre:hover {
+    box-shadow: 1px 3px 3px #27231a inset;
+}
+
+/*------------------
+    GAME STARTED
+-------------------*/
+.game-started header {
+    margin: 0px;
+    padding: 8px;
+}
+
+.game-started h1 {
+    font-size: 25px;
+}
+
+.game-started header p,
+.game-started .genres-container {
+    display: none;
+}
+
+/*-------------
+    LOADER
+-------------*/
+.loading {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img {
+    width: 120px;
+}
+
+.loading div {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+/*-------------
+    GAME OVER
+-------------*/
+.game-over {
+    color: #27231a;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameover-icon {
+    font-size: 50px;
+}
+
+.game-over h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #c20f0f;
+}
+
+.gameover-message {
+    margin: 15px 0px;
+    width: 100%;
+    font-weight: 600;
+}
+
+button {
+    color: #024c61;
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+    width: 80%;
+    background-color: transparent;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #27231a;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    box-shadow: 1px 3px 3px #27231a;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 1px 3px 3px #27231a inset;
+}
+
+/*-------------
+    STAGE
+-------------*/
+.stage-img {
+    min-height: 300px;
+    background-image: url('images/loading.gif');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.stage-img img {
+    max-width: 100%;
+}
+
+.stage-content {
+    padding: 10px;
+}
+
+.stage-description {
+    color: black;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.stage-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <!-- Title and description -->
+            <img class="logo" src="images/logo-2.png" alt="logo">
+            <h1>TaleScribe</h1>
+            <p>Hi PLAYER, welcome in the text-adventure game in which the story is created by <span id="ai">AI :)</span></p>
+        </header>
+
+        <main>
+            <!-- Genre choice -->
+            <div class="genres-container">
+                <h2>Choose the <div>game's</div> theme</h2>
+                <div class="genres">
+                    <div class="genre" data-genre="horror">👻 Horror</div>
+                    <div class="genre" data-genre="spionaggio">🕵️ Espionage</div>
+                    <div class="genre" data-genre="supereroi">🦸 Superheroes</div>
+                    <div class="genre" data-genre="pirati">🏴‍☠️ Pirates</div>
+                    <div class="genre" data-genre="apocalittico">🔥 Apocalyptic</div>
+                    <div class="genre" data-genre="stealth">🥷 Stealth</div>
+                    <div class="genre" data-genre="assasini">🗡️ Assassin</div>
+                    <div class="genre" data-genre="viaggi">🛬 Travels</div>
+                    <div class="genre" data-genre="robot">🤖 Artificial intelligence</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Loading -->
+        <div class="loading hidden">
+            <img src="images/loading.gif" alt="loading">
+            <div>Loading...</div>
+        </div>
+
+        <!-- Placeholder -->
+        <div id="placeholder"></div>
+
+        <!-- Game Over -->
+        <template id="gameover-template">
+            <div class="game-over">
+                <div class="gameover-icon">☠️</div>
+                <h2>Game Over</h2>
+                <p class="gameover-message"></p>
+                <button class="restart-btn">Restart</button>
+            </div>
+        </template>
+
+        <!-- Stage -->
+        <template id="stage-template">
+            <div class="stage">
+                <div class="stage-img"></div>
+                <div class="stage-content">
+                    <p class="stage-description"></p>
+                    <div class="stage-actions"></div>
+                </div>
+            </div>
+        </template>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -4,7 +4,7 @@
 
 // ChatGPT configuration
 const API_BASE_URL = 'https://api.openai.com/v1';
-const API_KEY = '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';
+const API_KEY = ''; // Put yor OpenAI Key here
 const GPT_MODEL = 'gpt-3.5-turbo';
 
 // HTML main elements

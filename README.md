@@ -9,7 +9,7 @@ TaleScribe is an exciting text-based adventure game where you embark on dynamic 
         <li>Download the ZIP file</li>
         <li>Open the folder with an editor</li>
         <li>Open the <em>main.js</em> file</li>
-        <li>Change the "API_KEY" variable with yout own key</li>
+        <li>Change the "API_KEY" variable with your own key</li>
     </ol>
 </div>
 
@@ -24,4 +24,4 @@ TaleScribe is an exciting text-based adventure game where you embark on dynamic 
     <strong>REMBER: do not share your key with ANYONE!</strong>
 </div>
 
-<h2>Open the index file with yor browser and you're done!</h2>
+<h2>Open the index file with your browser and you're done!</h2>

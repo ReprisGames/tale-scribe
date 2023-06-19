@@ -25,3 +25,4 @@ TaleScribe is an exciting text-based adventure game where you embark on dynamic 
 </div>
 
 <h2>Open the index file with your browser and you're done!</h2>
+<strong>P.S. The creation of this app was made possible thanks to the Boolean Coding Week</strong>

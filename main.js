@@ -9,6 +9,7 @@ const GPT_MODEL = 'gpt-3.5-turbo';
 
 // HTML main elements
 const inputKeyContainer = document.querySelector('.api-key')
+const genresContainer = document.querySelector('.genres-container')
 const loader = document.querySelector('.loading');
 const genreButtons = document.querySelectorAll('.genre');
 const placeholder = document.querySelector('#placeholder');
@@ -188,6 +189,9 @@ function getKey() {
 
     // Hide the input Key container
     inputKeyContainer.classList.add('hidden')
+
+    // Show the genres container
+    genresContainer.classList.remove('hidden')
 }
 
 /*----------------

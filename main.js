@@ -8,6 +8,7 @@ let API_KEY = ''; // Put yor OpenAI Key here
 const GPT_MODEL = 'gpt-3.5-turbo';
 
 // HTML main elements
+const inputKeyContainer = document.querySelector('.api-key')
 const loader = document.querySelector('.loading');
 const genreButtons = document.querySelectorAll('.genre');
 const placeholder = document.querySelector('#placeholder');
@@ -178,8 +179,15 @@ function setGameOver(description) {
 };
 
 function getKey() {
+    // Take the user key
     const inputKey = document.getElementById('input-key').value
+    console.log(inputKey)
+
+    // Put it in the variable
     API_KEY = inputKey
+
+    // Hide the input Key container
+    inputKeyContainer.classList.add('hidden')
 }
 
 /*----------------
@@ -190,8 +198,6 @@ function getKey() {
 genreButtons.forEach(function(button) {
     // When click...
     button.addEventListener('click', function() {
-        // Put the user key in the variable
-
         // Take the selected genre
         // Put it in the variable
         selectedGenre = button.dataset.genre;

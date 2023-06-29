@@ -8,7 +8,7 @@ TaleScribe is an exciting text-based adventure game where you embark on dynamic 
     <ol>
         <li>Download the ZIP file</li>
         <li>Open the folder with an editor</li>
-        <li>Open the <em>main.js</em> file</li>
+        <li>Open the <code>main.js</code> file</li>
         <li>Change the "API_KEY" variable with your own key</li>
     </ol>
 </div>

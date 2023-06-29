@@ -23,11 +23,38 @@ body {
 }
 
 /*-------------
+    INPUT KEY
+-------------*/
+
+.api-key {
+    font-weight: 700;
+    margin: 0px 35px;
+}
+
+#input-key {
+    color: #000000;
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+    width: 80%;
+    background-color: transparent;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #27231a;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    box-shadow: 1px 3px 3px #27231a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*-------------
     HEADER
 -------------*/
 header {
     padding: 20px;
-    margin: 30px;
+    margin: 10px 30px;
 }
 
 .logo {
@@ -57,7 +84,7 @@ header p span {
 -------------*/
 .genres-container {
     padding: 20px;
-    margin: 30px;
+    margin: 10px 30px;
 }
 
 .genres-container h2 {

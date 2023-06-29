@@ -4,7 +4,7 @@
 
 // ChatGPT configuration
 const API_BASE_URL = 'https://api.openai.com/v1';
-const API_KEY = ''; // Put yor OpenAI Key here
+let API_KEY = ''; // Put yor OpenAI Key here
 const GPT_MODEL = 'gpt-3.5-turbo';
 
 // HTML main elements
@@ -177,6 +177,12 @@ function setGameOver(description) {
     });
 };
 
+function getKey() {
+    const inputKey = document.getElementById('input-key').value
+    console.log(inputKey)
+    API_KEY = inputKey
+}
+
 /*----------------
     INIT & EVENTS
 -----------------*/
@@ -185,6 +191,8 @@ function setGameOver(description) {
 genreButtons.forEach(function(button) {
     // When click...
     button.addEventListener('click', function() {
+        // Put the user key in the variable
+
         // Take the selected genre
         // Put it in the variable
         selectedGenre = button.dataset.genre;

@@ -179,7 +179,6 @@ function setGameOver(description) {
 
 function getKey() {
     const inputKey = document.getElementById('input-key').value
-    console.log(inputKey)
     API_KEY = inputKey
 }
 
